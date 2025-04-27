@@ -1,4 +1,4 @@
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, Database, Settings, Compass, Rocket, Orbit } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
@@ -162,6 +162,117 @@ const Index = () => {
                 <CardDescription>
                   Precision formation flying analysis for NASA's MMS constellation
                 </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Astrodynamics building blocks at your fingertips
+            </h2>
+            <p className="text-lg text-gray-600">
+              Spaceflight-proven algorithms under the hood
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+            {/* Orbit Propagation Card */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 mx-auto mb-4">
+                  <Orbit className="w-full h-full text-primary" />
+                </div>
+                <CardTitle className="text-lg text-center">Orbit Propagation Features</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm space-y-2 text-gray-600 list-disc pl-4">
+                  <li>High-fidelity force modeling</li>
+                  <li>Multiple integration methods</li>
+                  <li>Extensive atmospheric models</li>
+                  <li>Solar radiation pressure</li>
+                  <li>Third-body gravity effects</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Contact Analysis Card */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 mx-auto mb-4">
+                  <Compass className="w-full h-full text-primary" />
+                </div>
+                <CardTitle className="text-lg text-center">Contact Analysis Features</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm space-y-2 text-gray-600 list-disc pl-4">
+                  <li>Ground station visibility</li>
+                  <li>Inter-satellite links</li>
+                  <li>Advanced line-of-sight tools</li>
+                  <li>Access interval calculation</li>
+                  <li>Communication coverage analysis</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Maneuver Planning Card */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 mx-auto mb-4">
+                  <Rocket className="w-full h-full text-primary" />
+                </div>
+                <CardTitle className="text-lg text-center">Maneuver Planning Features</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm space-y-2 text-gray-600 list-disc pl-4">
+                  <li>Impulsive & finite maneuvers</li>
+                  <li>Delta-V optimization</li>
+                  <li>Targeting capabilities</li>
+                  <li>Multi-burn sequences</li>
+                  <li>Automated planning tools</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Optimization Card */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 mx-auto mb-4">
+                  <Settings className="w-full h-full text-primary" />
+                </div>
+                <CardTitle className="text-lg text-center">Optimization Features</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm space-y-2 text-gray-600 list-disc pl-4">
+                  <li>Multiple optimization methods</li>
+                  <li>Custom objective functions</li>
+                  <li>Constraint handling</li>
+                  <li>Parameter sensitivity</li>
+                  <li>Multi-variable optimization</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Orbit Determination Card */}
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <div className="h-12 w-12 mx-auto mb-4">
+                  <Database className="w-full h-full text-primary" />
+                </div>
+                <CardTitle className="text-lg text-center">Orbit Determination Features</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="text-sm space-y-2 text-gray-600 list-disc pl-4">
+                  <li>Multiple measurement types</li>
+                  <li>Extended Kalman filtering</li>
+                  <li>Batch least squares</li>
+                  <li>Observation processing</li>
+                  <li>Covariance analysis</li>
+                </ul>
               </CardContent>
             </Card>
           </div>
